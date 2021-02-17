@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		New Sample HTML Doc
+
+	</title>
+
+	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+<div>
+	<input type="button" id="button1" value="buttonClick1">
+</div>
+
+<script>
+
+$("body").on("click",function(){
+ 
+		$("#button1").after("<input type='button' id='button2' value='buttonClick2'>");	
+
+		console.log("hi");
+	})
+
+</script>
+
+
+
+</body>
+</html>

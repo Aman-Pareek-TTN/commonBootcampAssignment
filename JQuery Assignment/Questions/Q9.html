@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		DropDown Example
+
+	</title>
+
+	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+<div>
+	
+	<select name="cars" id="cars">
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="mercedes">Mercedes</option>
+  <option value="audi">Audi</option>
+</select>
+
+</div>
+
+<script >
+$('#cars').change(
+    function() {
+        var var1 = $('#cars option:selected').text();
+        console.log("hi");
+        $("#cars").after("<div>" + var1 + "</div");      
+    }
+);
+	</script>
+
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+.lbtn
+{
+    display:inline-block;
+    cursor:pointer;
+    height:20px;
+    background-color:silver;
+    background-repeat:repeat-x;      
+    border:1px solid black; /* dark navy blue */ 
+    text-decoration:none;
+    font-size:11pt;
+    text-align:center;
+    line-height:20px;
+    padding:0px 10px 0px 10px;
+}
+
+.divMenuWrapper1
+{
+    height: 25px;
+    width: 75px;
+}
+
+.file_menu 
+{
+    display:none;
+    width:250px;
+    border: 1px solid #1c1c1c;
+    background-color: white;
+    position:relative;
+    z-index:100000;
+}
+
+.file_menu div 
+{
+    background-color: white;
+    font-size:10pt;
+}
+
+.file_menu div a 
+{
+    color:gray; 
+    text-decoration:none; 
+    padding:3px; 
+    padding-left:15px;
+    display:block;
+}
+
+.file_menu div a:hover 
+{
+    padding:3px;
+    padding-left:15px;
+    text-decoration:underline;
+    color: black;
+}
+
+.myClass{
+
+
+    color:red;
+}

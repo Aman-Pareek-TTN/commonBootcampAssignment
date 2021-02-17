@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Parent Child Example </title>
+
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+
+<div id="divParent">
+ 
+  <input type="button" value="Parent" id="buttonParent">
+
+<div id="divChild">
+ 
+ <input type="button" value="Child" id="buttonChild">
+
+</div>
+
+</div>
+
+
+
+ <script >
+  
+  $("#buttonParent").on("click",function(e){
+
+    console.log("Parent div clicked");
+
+  })
+
+  $("#buttonChild").on("click",function(e){
+
+    e.stopPropagation();
+
+  })
+
+
+</script>
+
+</body>
+</html>
+
+
+ 

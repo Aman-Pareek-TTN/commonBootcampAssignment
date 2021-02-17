@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+
+  
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+  <script>
+
+$(document).ready(function(){
+
+  $("#hoverlist").hover(
+    function () {
+        $('#drop_menu').finish().slideDown('fast');
+
+      },
+
+      function () {
+        $('#drop_menu').finish().slideUp('fast');
+    }
+
+    )
+})
+
+</script> 
+
+
+<link rel="stylesheet" type="text/css" href="mystylesheet3.css">
+
+
+</head>
+<body class="theme-transit" >
+   
+   <div id="hoverlist">
+    list
+    <div class="myClass" id="drop_menu">
+      Line 1<br>
+      Line 2<br>
+    </div>
+</div>
+
+</body>
+</html>

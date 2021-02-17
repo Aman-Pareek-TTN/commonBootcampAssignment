@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+
+  
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+
+<link rel="stylesheet" type="text/css" href="mystylesheet3.css">
+
+
+</head>
+
+
+<body class="theme-transit" >
+   
+   <div id="hoverlist">
+    list
+    <div class="myClass" id="firstDiv">
+      Line 1<br>
+      Line 2<br>
+    </div>
+     <div class="myClass" >
+      Line 1<br/>
+      Line 2<br/>
+      Line 3<br/>
+      Line 4<br/>
+    </div>
+    <div class="myClass">
+      Line 1
+    </div>
+    <div class="myClass" id="lastDiv">
+      Line 1
+      Line 2
+    </div> 
+</div>
+
+
+ <script >
+  
+var heights=$("div.myClass").map(function ()
+    {
+        
+        if( $(this).height() > 10)
+        {
+          $(this).css("color","green");
+        }
+
+        return $(this).height();
+
+    }).get();
+
+ maxHeight = Math.max.apply(null, heights);
+
+ console.log(heights);
+
+ $("#lastDiv").after("<p> Max Height :" + maxHeight + "</p>");
+
+
+</script> 
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Sample HTML Doc
+	</title>
+
+	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+
+	<link rel="stylesheet" href=" mystylesheet.css">
+
+</head>
+	<div>
+		<article id="test" class="class-new">
+			Hey this is a sample page enter username password here 
+			and this is a div tag
+		</article>
+	</div>
+	<br><br>
+	<form>
+		Username <input type="text" name="username" id="username"> <br><br>
+		Password <input type="password" name="password" id="password"> <br><br>
+
+		<input type="submit" name="submit" id="submit"> <br><br>
+	</form>
+
+	<div id="main">
+
+		<article>
+			This is a div tag
+		</article>
+
+		<article class="target">
+			some more article text 
+		</article>
+
+
+		<article id="test1" class="classnew">
+			Hey this is a sample page enter username password here
+			A wiki (/ˈwɪki/ (About this soundlisten) WIK-ee) is a hypertext publication collaboratively edited and managed by its own audience directly using a web browser. A typical wiki contains multiple pages for the subjects or scope of the project and could be either open to the public or limited to use within an organization for maintaining its internal knowledge base.
+		</article>
+
+	</div>
+
+
+	<script >
+		function disableSubmit(){
+			$("[type=submit]").attr("disabled",true);
+		};
+		disableSubmit();
+	</script>
+
+
+</body>
+</html>
